@@ -1,0 +1,27 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/resumora/*"
+  to = "/resumora/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/elegancyart-builder/*"
+  to = "/elegancyart-builder/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ai-video-generator/*"
+  to = "/ai-video-generator/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/tiktok-ai/*"
+  to = "/tiktok-ai/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/global-stock/*"
+  to = "/global-stock/index.html"
+  status = 200
