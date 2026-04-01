@@ -2,26 +2,26 @@
   publish = "."
 
 [[redirects]]
-  from = "/resumora/*"
+  from = "/resumora"
   to = "/resumora/index.html"
   status = 200
 
 [[redirects]]
-  from = "/elegancyart-builder/*"
+  from = "/elegancyart-builder"
   to = "/elegancyart-builder/index.html"
   status = 200
 
 [[redirects]]
-  from = "/ai-video-generator/*"
+  from = "/ai-video-generator"
   to = "/ai-video-generator/index.html"
   status = 200
 
 [[redirects]]
-  from = "/tiktok-ai/*"
+  from = "/tiktok-ai"
   to = "/tiktok-ai/index.html"
   status = 200
 
 [[redirects]]
-  from = "/global-stock/*"
+  from = "/global-stock"
   to = "/global-stock/index.html"
   status = 200
