@@ -1,0 +1,18 @@
+{
+  "task_engine": "BossMind",
+  "mode": "autonomous",
+  "storage": "Neon",
+  "structure": {
+    "task_id": "",
+    "status": "pending",
+    "step": "",
+    "next_action": "",
+    "assigned_agent": "",
+    "retry_count": 0
+  },
+  "rules": {
+    "auto_progress": true,
+    "max_retry": 2,
+    "loop_killer": true
+  }
+}
