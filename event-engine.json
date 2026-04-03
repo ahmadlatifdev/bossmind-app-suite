@@ -1,0 +1,17 @@
+{
+  "event_engine": "BossMind",
+  "mode": "event-driven",
+  "trigger_flow": [
+    "task_created",
+    "agent_assigned",
+    "step_completed",
+    "error_detected",
+    "retry_triggered",
+    "task_completed"
+  ],
+  "actions": {
+    "on_success": "next_step",
+    "on_error": "recovery_agent",
+    "on_retry_limit": "switch_strategy"
+  }
+}
