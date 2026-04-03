@@ -54,6 +54,12 @@ fetch('/bossmind.config.json')
     });
   });
 </script>
-
+<script>
+fetch('/supervisor.json')
+  .then(res => res.json())
+  .then(supervisor => {
+    console.log('Supervisor Active:', supervisor.engine);
+  });
+</script>
 </body>
 </html>
