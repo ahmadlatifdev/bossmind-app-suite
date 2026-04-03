@@ -1,0 +1,38 @@
+{
+  "system": "BossMind",
+  "version": "1.0",
+  "automation": {
+    "mode": "95_percent",
+    "supervisor": "DeepSeek V3",
+    "orchestrator": "LangGraph",
+    "event_engine": "n8n",
+    "memory_core": "Neon"
+  },
+  "projects": [
+    {
+      "name": "resumora",
+      "path": "/resumora",
+      "status": "active"
+    },
+    {
+      "name": "elegancyart-builder",
+      "path": "/elegancyart-builder",
+      "status": "active"
+    },
+    {
+      "name": "ai-video-generator",
+      "path": "/ai-video-generator",
+      "status": "active"
+    },
+    {
+      "name": "tiktok-ai",
+      "path": "/tiktok-ai",
+      "status": "active"
+    },
+    {
+      "name": "global-stock",
+      "path": "/global-stock",
+      "status": "active"
+    }
+  ]
+}
