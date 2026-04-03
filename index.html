@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>BossMind Apps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       background: #000;
@@ -21,29 +24,35 @@
       background: #111;
       border-radius: 10px;
       cursor: pointer;
-      transition: 0.3s;
     }
     .btn:hover {
       background: #222;
     }
   </style>
 </head>
+
 <body>
 
 <h1>BossMind Apps</h1>
 
-<div class="grid">
-  <div class="btn" onclick="openApp('resumora')">Resumora</div>
-  <div class="btn" onclick="openApp('elegancyart-builder')">ElegancyArt Builder</div>
-  <div class="btn" onclick="openApp('ai-video-generator')">AI Video Generator</div>
-  <div class="btn" onclick="openApp('tiktok-ai')">TikTok AI</div>
-  <div class="btn" onclick="openApp('global-stock')">Global Stock</div>
-</div>
+<div id="apps" class="grid"></div>
 
 <script>
-function openApp(folder) {
-  window.location.href = "/" + folder + "/";
-}
+fetch('/bossmind.config.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('apps');
+
+    data.projects.forEach(app => {
+      const btn = document.createElement('div');
+      btn.className = 'btn';
+      btn.innerText = app.name;
+      btn.onclick = () => {
+        window.location.href = app.path + '/';
+      };
+      container.appendChild(btn);
+    });
+  });
 </script>
 
 </body>
