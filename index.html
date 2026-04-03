@@ -68,5 +68,12 @@ fetch('/supervisor.json')
     console.log('Supervisor Active:', supervisor.engine);
   });
 </script>
+  <script>
+fetch('/event-engine.json')
+  .then(res => res.json())
+  .then(engine => {
+    console.log('Event Engine Active:', engine.mode);
+  });
+</script>
 </body>
 </html>
