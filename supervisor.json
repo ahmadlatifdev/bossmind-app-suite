@@ -1,0 +1,37 @@
+{
+  "supervisor": "BossMind",
+  "engine": "DeepSeek V3",
+  "mode": "autonomous",
+  "orchestrator": "LangGraph",
+  "event_engine": "n8n",
+  "memory": "Neon",
+
+  "agents": [
+    {
+      "name": "dev_agent",
+      "role": "code_fix_deploy"
+    },
+    {
+      "name": "infra_agent",
+      "role": "railway_render_dns"
+    },
+    {
+      "name": "data_agent",
+      "role": "neon_memory"
+    },
+    {
+      "name": "qa_agent",
+      "role": "test_validate"
+    },
+    {
+      "name": "recovery_agent",
+      "role": "fix_failures"
+    }
+  ],
+
+  "rules": {
+    "max_retry": 2,
+    "loop_killer": true,
+    "auto_recovery": true
+  }
+}
