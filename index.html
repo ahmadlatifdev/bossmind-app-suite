@@ -54,6 +54,13 @@ fetch('/bossmind.config.json')
     });
   });
 </script>
+  <script>
+fetch('/task-engine.json')
+  .then(res => res.json())
+  .then(engine => {
+    console.log('Task Engine Active:', engine.mode);
+  });
+</script>
 <script>
 fetch('/supervisor.json')
   .then(res => res.json())
